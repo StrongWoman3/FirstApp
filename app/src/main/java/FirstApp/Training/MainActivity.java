@@ -27,6 +27,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+TextView textView = (TextView) findViewById(R.id.normal);
+textView.setText("Text from Javacode");
+
 
       //  TextView textView = (TextView) findViewById(R.id.header);
       //  textView.setText("Hello Java");

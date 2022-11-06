@@ -5,53 +5,44 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    android:gravity="center"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    >
+<TextView
+    android:id="@+id/normal"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:background="#00f"
+    android:text="Width 200 dp"
+    android:textColor="#FFF"
+    android:textSize="26sp"
+    android:layout_marginTop="10dp"
+    android:padding="20dp"/>
 
     <TextView
-        android:id="@+id/text"
-        android:layout_weight="1"
-        android:textSize="30sp"
-        android:layout_width="wrap_content"
-        android:layout_height="200px"
-        android:text="Text is TextView"
-        />
-
-    <View
-        android:layout_width="wrap_content"
-        android:layout_height="300dp"
-        android:layout_weight="2"
-        android:foreground="@drawable/ic_launcher_background" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="58dp"
-        android:layout_weight="1"
-        android:text="Button" />
-
-</LinearLayout>
-
-
-<!-- <androidx.constraintlayout.widget.ConstraintLayout
-xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-  xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-tools:context=".MainActivity">
-
-<TextView
-    android:id="@+id/textView"
+        android:id="@+id/italic"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_marginBottom="1dp"
-    android:layout_weight="1"
-    android:text="Hello_world"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintLeft_toLeftOf="parent"
-    app:layout_constraintRight_toRightOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintVertical_bias="0.134" />
+    android:background="#03A9F4"
+        android:text="Width wrap content"
+    android:textColor="#FFF"
+    android:textSize="100sp"
+        android:layout_marginTop="10dp"
+        android:textStyle="italic"
+        android:padding="20dp"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#5A32A0"
+        android:text="Width match parent"
+        android:textColor="#FFF"
+        android:textSize="26sp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:padding="20dp"
+        android:gravity="center"/>
+
+
+
+</LinearLayout>
